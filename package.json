@@ -1,0 +1,53 @@
+{
+  "name": "translating-server",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production ./node_modules/.bin/nodemon ./index.js",
+    "dev": "cross-env NODE_ENV=development ./node_modules/.bin/nodemon ./index.js",
+    "test": "cross-env NODE_ENV=test ./node_modules/.bin/nodemon ./index.js"
+  },
+  "dependencies": {
+    "@google-cloud/translate": "^2.1.2",
+    "axios": "^0.17.1",
+    "babel-register": "^6.26.0",
+    "docx4js": "^3.1.12",
+    "html-to-text": "^4.0.0",
+    "jsonwebtoken": "^8.2.0",
+    "koa": "^2.4.1",
+    "koa-body": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-cors": "^0.0.16",
+    "koa-jwt": "^3.3.1",
+    "koa-onerror": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-send": "^4.1.3",
+    "koa-spa": "^0.1.3",
+    "koa-static-cache": "^5.1.1",
+    "mammoth": "^1.4.4",
+    "moment": "^2.20.1",
+    "mongoose": "^4.10.8",
+    "multiparty": "^4.1.3",
+    "nodemailer": "^4.6.3",
+    "nzh": "^1.0.3",
+    "request": "^2.85.0",
+    "timsort": "^0.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "cross-env": "^3.1.4",
+    "nodemon": "^1.11.0"
+  },
+  "engines": {
+    "node": ">= 7.6.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
